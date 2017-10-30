@@ -1,7 +1,7 @@
 //interfejs klasy Stock
 //wersja 00
-#ifndef STOCK00_H_
-#define STOCK00_H_
+#ifndef STOCK_H_
+#define STOCK_H_
 
 #include <string>
 using namespace std;
@@ -20,4 +20,4 @@ public:													//metody klasy - funkcje sk³adowe
 	void update(double price);
 	void show();
 }; //œrednik konczy deklaracje klasy
-#endif // !STOCK00_H_
+#endif // !STOCK_H_

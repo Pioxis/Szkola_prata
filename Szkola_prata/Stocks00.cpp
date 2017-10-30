@@ -59,6 +59,6 @@ void Stock::show()
 {
 	cout << "Nazwa spolki: " << company
 		<< " Liczba udzialow: " << shares
-		<< " Cena udzialu: " << share_val
+		<< " Cena udzialu: " << share_val <<" zl"
 		<< " Laczna wartosc udzialow: " << total_val << " zl" << endl;
 }

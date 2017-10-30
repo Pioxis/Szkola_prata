@@ -28,10 +28,12 @@ int main()
 	cout << "Wynik modulu dla Z2 = " << mod2 << endl;*/
 
 	Stock firma1, firma2;
-
-	firma1.acquire("PioxisTM", 13, 2500);
+	double udzial1 = 345.123;
+	firma1.acquire("PioxisTM", 13, udzial1);
 	firma1.show();
-
+	firma1.sell(2, udzial1);
+	firma1.show();
+	
 
 
 	system("pause");
