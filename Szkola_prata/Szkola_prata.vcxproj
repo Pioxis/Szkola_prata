@@ -111,7 +111,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Stocks00.cpp" />
     <ClCompile Include="Źródło.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

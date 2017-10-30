@@ -1,11 +1,12 @@
-#include <cmath>;
-#include <iostream>;
+#include <cmath>
+#include <iostream>
+#include "Stock.h"
 
 using namespace std;
 
 int main()
 {
-	int x;
+	/*int x;
 	int y;
 		int zesp1[2] = { 2, 5 };
 		int zesp2[2] = { 6, 12 };
@@ -24,7 +25,14 @@ int main()
 	double mod2 = sqrt(pow(zesp2[0], 2) + pow(zesp2[1], 2));
 
 	cout << "Wynik modulu dla Z1 = " << mod1 << endl;
-	cout << "Wynik modulu dla Z2 = " << mod2 << endl;
+	cout << "Wynik modulu dla Z2 = " << mod2 << endl;*/
+
+	Stock firma1, firma2;
+
+	firma1.acquire("PioxisTM", 13, 2500);
+	firma1.show();
+
+
 
 	system("pause");
 	return 0;
