@@ -18,7 +18,6 @@ void Stock::acquire(const string & co, long n, double pr)
 	cout << "Podana wartosc jednej akcji: " << share_val << endl;
 	set_tot();
 }
-
 void Stock::buy(long num, double price)
 {
 	if (num < 0)
@@ -32,7 +31,6 @@ void Stock::buy(long num, double price)
 		set_tot();
 	}
 }
-
 void Stock::sell(long num, double price)
 {
 	if (num < 0)
