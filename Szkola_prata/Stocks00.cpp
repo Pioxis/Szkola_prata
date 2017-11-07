@@ -59,6 +59,6 @@ void Stock::show()
 {
 	cout << PL("Nazwa spó³ki: ") << company
 		<< PL(" Liczba udzia³ów: ") << shares
-		<< PL(" Cena udzia³u: ") << Zaokr(share_val)<<PL(" z³")
-		<< PL(" £¹czna wartoœæ udzia³ów: ")<<Zaokr(total_val) << PL(" z³") << endl;
+		<< PL(" Cena udzia³u: ") << share_val<<PL(" z³")
+		<< PL(" £¹czna wartoœæ udzia³ów: ")<<total_val << PL(" z³") << endl;
 }
