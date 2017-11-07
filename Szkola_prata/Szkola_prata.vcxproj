@@ -111,11 +111,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="polishstring.cpp" />
     <ClCompile Include="Stocks00.cpp" />
+    <ClCompile Include="zaokr.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="polishstring.h" />
     <ClInclude Include="Stock.h" />
+    <ClInclude Include="zaokr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

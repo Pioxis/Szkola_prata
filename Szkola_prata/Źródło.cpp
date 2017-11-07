@@ -1,7 +1,11 @@
 #include <iostream>
 #include "Stock.h"
+#include <conio.h>
+#include "polishstring.h"
 
 using namespace std;
+
+
 
 int main()
 {
@@ -12,5 +16,6 @@ int main()
 	firma1.sell(2, udzial1);
 	firma1.show();
 	system("pause");
+
 	return 0;
 }
