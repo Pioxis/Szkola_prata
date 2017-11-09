@@ -4,4 +4,3 @@
 using namespace std;
 string PL(const char * text);
 #endif // !POLISHSTRING_H_
-

@@ -3,7 +3,9 @@
 #include"Stock.h"
 #include "polishstring.h"
 #include "Zaokr.h"
+
 using namespace std;
+
 void Stock::acquire(const string & co, long n, double pr)
 {
 	company = co;

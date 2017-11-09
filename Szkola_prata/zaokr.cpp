@@ -12,4 +12,4 @@ double Zaokr(double x, int q)
 		tmp = floor(x) + 1;
 
 	return tmp / pow(10, q);
-};
+}
