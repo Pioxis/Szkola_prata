@@ -5,23 +5,23 @@
 #include <memory>
 #include <set>
 #include <functional>
-
+using namespace std;
 class GeometrySet
 {
 
 public:
-	std::set<std::shared_ptr<Geometry>, 
-		std::function<bool(std::shared_ptr<Geometry>, 
-			std::shared_ptr<Geometry>)>>  SharePointerSet;
+	set<shared_ptr<Geometry>, 
+		function<bool(shared_ptr<Geometry>, 
+			shared_ptr<Geometry>)>>  SharePointerSet;
 
-	GeometrySet(UniqueGeometryList&& rhs) : SharePointerSet([](std::shared_ptr<Geometry> a, std::shared_ptr<Geometry> b)->bool 
+	GeometrySet(UniqueGeometryList&& rhs) : SharePointerSet([](shared_ptr<Geometry> a, shared_ptr<Geometry> b)->bool 
 	{
 		return a->area() < b->area();
 	})
 	{
 		for (auto e = rhs.UniquePointerList.begin(); e != rhs.UniquePointerList.end(); ++e)
 		{
-			SharePointerSet.insert(std::move(*e));
+			SharePointerSet.insert(move(*e));
 		}
 	}
 };

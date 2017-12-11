@@ -6,23 +6,23 @@
 #include <memory>
 #include <iostream>
 #include <fstream>
-
+using namespace std;
 class UniqueGeometryList
 {
 public:
-	std::list<std::unique_ptr<Geometry>> UniquePointerList;
-	UniqueGeometryList(const std::string file)
+	list<unique_ptr<Geometry>> UniquePointerList;
+	UniqueGeometryList(const string file)
 	{
-		std::ifstream myfile(file);
+		ifstream myfile(file);
 		if (!myfile.good())
 		{
-			std::cout << "Blad odczytu pliku" << std::endl;
+			cout << "Blad odczytu pliku" << endl;
 		}
 
 		while (myfile.good())
 		{
-			std::string x;
-			std::getline(myfile, x);
+			string x;
+			getline(myfile, x);
 			UniquePointerList.emplace_back(GeometryFactory::create(x));
 		}
 		myfile.close();
