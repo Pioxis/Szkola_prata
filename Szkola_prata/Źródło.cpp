@@ -18,7 +18,7 @@ int main()
 	//===============================================
 	firma2.acquire("KamilSA", 1337, udzial2);
 	firma2.show();
-
+	cout << PL("Lubiê placki z rodzynkami");
 	//===============================================
 	system("pause");
 	return 0;
